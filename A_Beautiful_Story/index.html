@@ -16,10 +16,11 @@
             padding-bottom: 5vh;
         }
         .title {
+            box-sizing: border-box;
             width: 100%;
             font-size: 32px;
             text-align: center;
-            margin: 42px;
+            padding: 42px;
         }
         .block {
             width: 90vw;
@@ -48,17 +49,28 @@
             position: absolute;
             top: 1vh;
             left: 1vw;
+            cursor: pointer;
         }
         .back button {
             font-size: 20px;
             font-family: 'Ubuntu', sans-serif;
             padding: 4px 8px;
             color: #036;
-            text-shadow: 1px 1px 1px #111;;
+            color: #246;
+            font-weight: bold;
+            /* text-shadow: 1px 1px 1px #111; */
             background-color: #39f8;
             background-image: linear-gradient(to bottom, #369, #69c);
-            border: 2px outset #369;
-            box-shadow: 2px 2px 2px #2229;
+            background-image: linear-gradient(to bottom, #abc, #cde);
+            border: 2px outset #246;
+            box-shadow: 1px 1px 1px #2229;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+        }
+        .back:hover button {
+            box-shadow: 2px 4px 4px #2229;
+            transform: translateX(-4px);
         }
 
         a:link { color: white; text-decoration: none;}
@@ -88,7 +100,7 @@
     </style>
 </head>
 <body>
-    <a class="back" href="../"><button>Back</button></a>
+    <a class="back" href="https://userstefdlt.github.io/Story/"><button>&lt; back</button></a>
     <div class="title">A Beautiful Story</div>
     <div class="block">
         <p>What is a beautiful story? What would it be about? What should it say?</p>
