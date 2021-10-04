@@ -13,31 +13,43 @@
             background: #eee;
             /* font-family: 'Ubuntu', sans-serif; */
             font-family: 'Alegreya', serif;
+            padding-bottom: 5vh;
         }
         .title {
             width: 100%;
             font-size: 32px;
             text-align: center;
+            margin: 42px;
         }
         .block {
             width: 90vw;
-            padding: 2vw;
+            max-width: 60em;
             margin: 8px auto;
             font-family: 'Alegreya', serif;
         }
         .ps {
+            margin-bottom: 2px;
+        }
+        .ps span {
             color: #789;
-            margin-right: 8px;
+            margin-right: 4px;
+        }
+        ul {
+            margin-top: 0;
         }
         .sign-off {
             color: #444;
             font-family: 'Satisfy', cursive;
+            margin: 24px 0px;
         }
+
 
         .back {
             position: absolute;
             top: 1vh;
             left: 1vw;
+        }
+        .back button {
             font-size: 20px;
             font-family: 'Ubuntu', sans-serif;
             padding: 4px 8px;
@@ -76,7 +88,7 @@
     </style>
 </head>
 <body>
-    <a href="../"><button class="back">Back</button></a>
+    <a class="back" href="../"><button>Back</button></a>
     <div class="title">A Beautiful Story</div>
     <div class="block">
         <p>What is a beautiful story? What would it be about? What should it say?</p>
@@ -143,7 +155,7 @@
     </div>
 
     <div class="block">
-    <p><span class="ps">P.S.:</span>
+    <p class="ps"><span>P.S.:</span>
         Other things I would thank my author for adding to my story:</p>
     <ul>
         <li>Pastries</li>
@@ -173,12 +185,11 @@
     </ul>
     </div>
     <div class="block">
-    <p><span class="ps">P.P.S.:</span>
+    <p class="ps"><span>P.P.S.:</span>
     By the way, Karim the Pirate, is back in the sea, someone told her that she could still enjoy what she enjoyed without being a pirate... who knew that adventurers do the same thing but get paid for that... Anyways. Thank you. Have a happy day.</p>
     </div>
-
-    <div class="sign-off">
-    —Jane Auth an Author.
+    <div class="block">
+        <span class="sign-off">—Jane Auth an Author.</span>
     </div>
 
     <div class="name-end">From Stef.</div>
