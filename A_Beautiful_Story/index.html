@@ -23,18 +23,18 @@
             text-align: center;
             padding: 42px;
         }
-        .title::after {
+        .title span::after {
             content: '';
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
             height: 100%; width: 100%;
             box-shadow: 0 2px 0 -1px goldenrod;
-            transform: scale(0);
+            transform: scale(0, 1);
             transform-origin: 0% 50%;
-            transition: transform 200ms ease-in-out;
+            transition: transform 800ms ease-in-out 1200ms;
         }
-        .title:hover::after {
-            transform: scale(1);
+        .title:hover span::after {
+            transform: scale(1, 1);
         }
 
         .block {
@@ -48,7 +48,10 @@
             height: 1px;
             width: 80vw;
             border: 2px solid #036;
+            border-left: 2px solid #0360;
+            border-right: 2px solid #0360;
             border-radius: 50%;
+            margin: 12px auto;
         }
         .ps {
             margin-bottom: 2px;
@@ -121,7 +124,7 @@
 </head>
 <body>
     <a class="back" href="https://userstefdlt.github.io/Story/"><button>&lt; back</button></a>
-    <div class="title">A Beautiful Story</div>
+    <div class="title"><span>A Beautiful Story</span></div>
     <div class="block">
         <p>What is a beautiful story? What would it be about? What should it say?</p>
         <p>Many times I have asked myself that while writing, I think that many forget their reason for writing as they write. Many forget who they are as they blend their persona with their characters and forget their world as they load their worlds in their minds.</p>
@@ -224,7 +227,7 @@
     By the way, Karim the Pirate, is back in the sea, someone told her that she could still enjoy what she enjoyed without being a pirate... who knew that adventurers do the same thing but get paid for that... Anyways. Thank you. Have a happy day.</p>
     </div>
     <div class="block">
-        <span class="sign-off">—Jane Auth an Author.</span>
+        <div class="sign-off">—Jane Auth an Author.</div>
     </div>
 
     <div class="name-end">From Stef.</div>
