@@ -7,10 +7,23 @@
     <title>A Beautiful Story</title>
     <style>
         @import url('https://fonts.googleapis.com/css?family=Alegreya|Ubuntu|Satisfy&display=swap');
+        :root{
+            --page-bg: #eee;
+            --page-txt: #222;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root{
+                --page-bg: #222;
+                --page-txt: #eee;
+            }
+        }
         body {
             margin: 0;
             color: #222;
+            color: var(--page-bg);
             background: #eee;
+            background: var(--page-txt);
             /* font-family: 'Ubuntu', sans-serif; */
             font-family: 'Alegreya', serif;
             padding-bottom: 5vh;
@@ -41,6 +54,7 @@
             transform: scale(1, 1);
         }
 
+        body:focus .title span::after,
         body:hover .title span::after {
             transform: scale(1, 1);
             transition: transform 800ms ease-in-out 600ms;
@@ -127,6 +141,7 @@
             color: hsla(210, 89%, 29%, 50%);
             transition: color 1s ease-out 2s;
         }
+        body:focus .name-end,
         body:hover .name-end {
             color: hsla(210, 89%, 29%, 50%);
             transition: color 1s ease-out 12s;
