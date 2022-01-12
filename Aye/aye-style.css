@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Ubuntu|Satisfy&display=swap');
-:root{
+/* Forum */
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+.font-Forum { font-family: 'Forum', cursive; font-size: 1.5rem; }
+/* :root{
     --page-bg: #eee;
     --page-txt: #222;
-}
+} */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --page-bg: #222;
         --page-txt: #eee;
     }
-}
-body {
+} */
+/* body {
     margin: 0;
     color: #222;
     color: var(--page-txt);
     background: #eee;
     background: var(--page-bg);
-    /* font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
     font-family: 'Alegreya', serif;
     padding-bottom: 5vh;
 }
@@ -57,9 +60,9 @@ body:hover .title span::after {
     max-width: 60em;
     margin: 8px auto;
     font-family: 'Alegreya', serif;
-}
+} */
 
-.the-end {
+/* .the-end {
     height: 1px;
     width: 80vw;
     border: 2px solid #036;
@@ -83,10 +86,10 @@ ul {
     font-family: 'Satisfy', cursive;
     margin: 24px 0px;
     font-size: 21px;
-}
+} */
 
 
-.back {
+/* .back {
     position: absolute;
     top: 1vh;
     left: 1vw;
@@ -100,7 +103,7 @@ ul {
     color: #036;
     color: #246;
     font-weight: bold;
-    /* text-shadow: 1px 1px 1px #111; */
+    text-shadow: 1px 1px 1px #111;
     background-color: #39f8;
     background-image: linear-gradient(to bottom, #369, #69c);
     background-image: linear-gradient(to bottom, #abc, #cde);
@@ -137,11 +140,11 @@ body:focus .name-end,
 body:hover .name-end {
     color: hsla(210, 89%, 29%, 50%);
     transition: color 1s ease-out 12s;
-}
+} */
 
 /* Forum */
-@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-.font-Forum { font-family: 'Forum', cursive; font-size: 1.5rem; }
+/* @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+.font-Forum { font-family: 'Forum', cursive; font-size: 1.5rem; } */
 :root {
     --hue-1: 30;
     --hue-2: 0;
