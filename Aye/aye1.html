@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aye | my D&D character</title>
+    <link rel="stylesheet" href="../../../css-styles/radio-nav-short.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Alegreya|Ubuntu|Satisfy&display=swap');
+        :root{
+            --page-bg: #eee;
+            --page-txt: #222;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root{
+                --page-bg: #222;
+                --page-txt: #eee;
+            }
+        }
+        body {
+            margin: 0;
+            color: #222;
+            color: var(--page-txt);
+            background: #eee;
+            background: var(--page-bg);
+            /* font-family: 'Ubuntu', sans-serif; */
+            font-family: 'Alegreya', serif;
+            padding-bottom: 5vh;
+        }
+        .title {
+            position: relative;
+            box-sizing: border-box;
+            width: 100%;
+            width: max-content;
+            margin: 42px auto;
+            font-size: 32px;
+            text-align: center;
+        }
+        .title span {
+            position: relative;
+        }
+        .title span::after {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            height: 100%; width: 100%;
+            box-shadow: 0 2px 0 -1px goldenrod;
+            transform: scale(0, 1);
+            transform-origin: 0% 50%;
+            transition: transform 800ms ease-in-out 200ms;
+        }
+        .title:hover span::after {
+            transform: scale(1, 1);
+        }
+
+        body:focus .title span::after,
+        body:hover .title span::after {
+            transform: scale(1, 1);
+            transition: transform 800ms ease-in-out 600ms;
+        }
+
+        .block {
+            width: 90vw;
+            max-width: 60em;
+            margin: 8px auto;
+            font-family: 'Alegreya', serif;
+        }
+
+        .the-end {
+            height: 1px;
+            width: 80vw;
+            border: 2px solid #036;
+            border-left: 2px solid #0360;
+            border-right: 2px solid #0360;
+            border-radius: 50%;
+            margin: 50px auto;
+        }
+        .ps {
+            margin-bottom: 2px;
+        }
+        .ps span {
+            color: #789;
+            margin-right: 4px;
+        }
+        ul {
+            margin-top: 0;
+        }
+        .sign-off {
+            color: #444;
+            font-family: 'Satisfy', cursive;
+            margin: 24px 0px;
+            font-size: 21px;
+        }
+
+
+        .back {
+            position: absolute;
+            top: 1vh;
+            left: 1vw;
+            cursor: pointer;
+            z-index: 500;
+        }
+        .back button {
+            font-size: 20px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 4px 8px;
+            color: #036;
+            color: #246;
+            font-weight: bold;
+            /* text-shadow: 1px 1px 1px #111; */
+            background-color: #39f8;
+            background-image: linear-gradient(to bottom, #369, #69c);
+            background-image: linear-gradient(to bottom, #abc, #cde);
+            border: 2px outset #246;
+            box-shadow: 1px 1px 1px #2229;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out;
+        }
+        .back:hover button {
+            box-shadow: 2px 4px 4px #2229;
+            transform: translateX(-4px);
+        }
+
+        a:link { color: white; text-decoration: none;}
+        a:hover { text-decoration: underline; }
+        a:visited { color: white; }
+
+        .name-end {
+            position: fixed;
+            bottom: 5px;
+            right: 12px;
+            color: hsla(210, 89%, 29%, 5%);
+            font-size: 24pt;
+            font-family: 'Satisfy', cursive;
+            user-select: none;
+            transition: color .5s ease-out;
+        }
+        .name-end:hover {
+            color: hsla(210, 89%, 29%, 50%);
+            transition: color 1s ease-out 2s;
+        }
+        body:focus .name-end,
+        body:hover .name-end {
+            color: hsla(210, 89%, 29%, 50%);
+            transition: color 1s ease-out 12s;
+        }
+    </style>
+</head>
+<body>
+    <a class="back" href="https://userstefdlt.github.io/Story/"><button>&lt; back</button></a>
+    <div class="title"><span>Aye of the Star</span></div>
+
+    <div class="block">
+        <p>My name is Aye, like in “<em>Aye Aye Captain!</em>”</p>
+        <p>I grew up on a ship. My mom was the captain. I used to help a little by passing messages from my mom to the crew. They used to tell me “<em>Aye Aye Lil Cap!</em>”</p>
+    </div><div class="block">
+        <p>One day when I was 12 an eldritch storm took a toll on the ship, the navigator suggested a location which was a risk, but the ship wouldn't have made it to another location. Captain Mom(not her real name) left with some of the crew to get the repairs and supplies needed, but I never saw her again... </p>
+        <p>A few days later some guards came to seize the ship and said that it was a pirate ship. I was taken to a monastery because I was not old enough to go to prison and they thought I was being groomed to be a pirate. I didn't enjoy the monastery much, so I sneaked out alot and broke into a library to find information about my mother.</p>
+    </div><div class="block">
+        <p>I made some friends who were also good at sneaking around, and some “<em>more than friends</em>”, but that is another story for another day. With the help of my friends I learned to keep the lights out, and while I was not able to read in the dark, one of my "<em>friends</em>" was. Safe to say, I found some interesting books, but one day the "friend" who used to help me disappear and I couldn't continue researching.</p>
+    </div><div class="block">
+        <p>One book that I kept was of this Star far far away. One part of the book talked about wishing on a star. What a whimsical idea, wishing to the lights on the sky for knowledge or a miracle. Without anything to lose I made a wish... Funny thing about stars… did you know that they can talk back?</p>
+    </div><div class="block">
+        <p>After a while my Star gave me the ability to see in the dark, I call it Star's Sight, which is what allows me to continue researching. It has been 5 years since the storm that changed my life. I hope I can find what happened to my mother one day, but until then I will try to prepare myself for whatever obstacle I can find.</p>
+    </div>
+
+    <div class="the-end">
+    </div>
+
+
+    <div class="name-end">From Stef.</div>
+    
+</body>
+</html>
