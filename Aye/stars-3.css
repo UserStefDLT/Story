@@ -289,7 +289,7 @@ header {
     radial-gradient(circle at 20% 20%, #fff, #fff8 2rem, #fff0 3rem),
     linear-gradient(135deg, #123, #789); */
     background-image: 
-    linear-gradient(135deg, #7890 20%, #456),
+    radial-gradient(circle at 100% 100%, #4568, #7890 85%),
     linear-gradient(135deg, #123, #123);
     z-index: -1;
     background-attachment: fixed;
