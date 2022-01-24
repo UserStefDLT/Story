@@ -108,6 +108,22 @@
                 0px 0px 15px var(--bg);
             }
         }
+        .title {
+            position: relative;
+            min-width: 50px !important;
+        }
+        .title .full, .title .short {
+            position: absolute;
+            left: 0;
+            width: max-content;
+        }
+        .title .full, .title .short { transition: opacity 200ms ease-in-out; }
+        .title .full {opacity: 1;}
+        .title .short {opacity: 0;}
+        @media (max-width: 450px){
+            .title .full {opacity: 0;}
+            .title .short {opacity: 1;}
+        }
     </style>
     <link rel="stylesheet" href="../stylesheets/end.css">
 </head>
@@ -117,7 +133,8 @@
     </div>
     <header>
         <a href="../" class="backLink"><div class="backBtn">Back?</div></a>
-        <div class="title">Aye of the Star</div>
+        <!-- <div class="title">Aye of the Star</div> -->
+        <div class="title"><div class="short">Aye</div><div class="full">Aye of the Star</div></div>
         <!-- <div class="subtitle">night sky</div> -->
     </header>
     <input type="checkbox" name="AyeStory" id="AyeStory">
