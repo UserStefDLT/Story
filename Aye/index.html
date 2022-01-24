@@ -5,143 +5,231 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://raw.githubusercontent.com/UserStefDLT/WebResources/master/Images/icon_st.png">
-    <title>Aye Aye Lil Cap!</title>
+    <title>Aye of the Star | Labst</title>
+    <!-- <link rel="stylesheet" href="../../../../start.css"> -->
     <link rel="stylesheet" href="../stylesheets/start.css">
-    <link rel="stylesheet" href="radio-nav.css">
-    <link rel="stylesheet" href="aye-style.css">
+    <link rel="stylesheet" href="radio-nav-3.css">
+    <link rel="stylesheet" href="stars-4.css">
+    <style>
+        section{ --bg02: hsla(var(--hue), 50%, 5%, 80%); }
+
+        .title {
+            position: relative;
+            min-width: 50px !important;
+        }
+        .title .full, .title .short {
+            position: absolute;
+            left: 0;
+            width: max-content;
+        }
+        .title .full, .title .short { transition: opacity 200ms ease-in-out; }
+        .title .full {opacity: 1;}
+        .title .short {opacity: 0;}
+        @media (max-width: 450px){
+            .title .full {opacity: 0;}
+            .title .short {opacity: 1;}
+        }
+        .chapter > div { margin: 1rem 0; }
+    </style>
     <link rel="stylesheet" href="../stylesheets/end.css">
 </head>
 <body>
+    <!-- <div class="bg-stars starry"></div> -->
+    <div class="bg-stars star-field">
+    </div>
     <header>
         <a href="../" class="backLink"><div class="backBtn">Back?</div></a>
-        <div class="title">Aye of the Star</div>
-        <div class="subtitle">Kalashtar Warlock Druid</div>
+        <div class="title"><div class="short">Aye</div><div class="full">Aye of the Star</div></div>
     </header>
+    <input type="checkbox" name="AyeStory" id="AyeStory">
+    <label for="AyeStory" class="navbtn"><span class="forBigScreens">Aye’s </span>Backstory</label>
 
     <main>
-        <input type="radio" id="nav-to-A" name="section" class="nav-input">
-        <input type="radio" id="nav-to-B" name="section" class="nav-input">
-        <input type="radio" id="nav-to-C" name="section" class="nav-input" checked>
-        <input type="radio" id="nav-to-D" name="section" class="nav-input">
-        <input type="radio" id="nav-to-E" name="section" class="nav-input">
-        <!-- <div class="my-radio-nav">
-            <label for="nav-to-A" class="navbtn">Welcome</label>
-            <label for="nav-to-B" class="navbtn">Aye’s Character Sheet</label>
-            <label for="nav-to-C" class="navbtn">Aye’s Backstory</label>
-            <label for="nav-to-D" class="navbtn">Aye’s Constelation</label>
-            <label for="nav-to-E" class="navbtn">Extra</label>
-        </div> -->
-        <div class="my-radio-nav">
-            <label for="nav-to-A" class="navbtn hidden">Welcome</label>
-            <label for="nav-to-B" class="navbtn"><span class="forBigScreens">Aye’s </span>Character Sheet</label>
-            <label for="nav-to-C" class="navbtn"><span class="forBigScreens">Aye’s </span>Backstory</label>
-            <label for="nav-to-D" class="navbtn hidden"><span class="forBigScreens">Aye’s </span>Constelation</label>
-            <label for="nav-to-E" class="navbtn hidden">Extra</label>
-        </div>
-
         <div class="sections">
-            <section id="section-A"><h2>Welcome</h2>
-                <div class="deck">
-                    <div class="card hover-glow">
-                        <div class="card-name">Short Version</div>
-                        <div class="card-img"></div>
-                        <div class="card-tag hover-glow">words</div>
-                    </div>
-                    <div class="card hover-glow">
-                        <div class="card-name">Character Sheet</div>
-                        <div class="card-img"></div>
-                        <div class="card-tag hover-glow">stats</div>
-                    </div>
-                    <div class="card hover-glow">
-                        <div class="card-name">Stars</div>
-                        <div class="card-img"></div>
-                        <div class="card-tag hover-glow">map</div>
-                    </div>
-                </div>
-            </section>
-            <section id="section-B"><h2>Aye’s Character Sheet</h2>
-                <div class="stats--ability-scores"></div>
-                <div class="under-construction">Under Construction.</div>
-            </section>
             <section id="section-C" class="font-Forum"><h2>Aye’s Backstory</h2>
-
                 <div class="backstory">
                     <div class="chapter">
-                        <p class="chapter-title"> The Aye of the Storm. </p>
-
-                        <p>My name is Aye.
-                        Aye like in “<em>Aye Aye Captain!</em>” or in my case <em>“Aye Aye Lil Cap!”</em> which is how the crew of the ship usually answered when I relayed an order from the Captain, my mom. I was pretty good at it, because my mom and I shared a link. We could talk to each other's mind.</p>
+                        <div class="chapter-title">The Aye of the Storm.</div>
+                        
+                        <div>My name is Aye. 
+                        Aye like in “<em>Aye Aye Captain!</em>” or in my case <em>“Aye Aye Lil Cap!”</em> which is how the crew of the ship usually answered when I relayed an order from the Captain, my mom. I was pretty good at it, because my mom and I shared a link. We could talk to each other's mind.</div>
  
-                        <p>One day, when I was still too young to be out during a storm <span class="clue" data-clue-type="age" data-clue="12 years old.">♦</span>. The sky warned us of a storm brewing and the ocean became quiet and calm. It seemed like a normal storm brewing, until it started to whisper and I was sent to a safer part of the ship, but when we moved past the storm I heard it was an eldritch storm. The kind of storm with creatures made of smoke and lighting, the kind of storm that carries screams and deafening sounds that leads to madness for those who hear the horrors for too long, but personally I only heard whispers but too many to make sense of it. </p>
+                        <div>One day, when I was still too young to be out during a storm <div class="clue" data-clue-type="age" data-clue="12 years old.">♦</div>. The sky warned us of a storm brewing and the ocean became quiet and calm. It seemed like a normal storm brewing, until it started to whisper and I was sent to a safer part of the ship, but when we moved past the storm I heard it was an eldritch storm. The kind of storm with creatures made of smoke and lighting, the kind of storm that carries screams and deafening sounds that leads to madness for those who hear the horrors for too long, but personally I only heard whispers but too many to make sense of it. </div>
                        
-                        <p>The damage to the ship was too big and the navigator suggested a location which was a risk, but the ship wouldn’t have made it to another location.</p>
+                        <div>The damage to the ship was too big and the navigator suggested a location which was a risk, but the ship wouldn’t have made it to another location.</div>
                        
-                        <p>Once we got there, Captain Mom (not her real name) left with some of the crew to get the repairs and supplies needed, but I never saw her again. Later in that week, some guards approached the ship. I didn’t tell them my real name, because my mom always told me to keep it a secret, and unless I'm getting married, no one really needs to know it. They never asked about my relationship with the captain, but the navigator said that they found me, I just agreed. I was later told that the captain of the ship was a pirate. I knew, but I acted surprised anyways.</p>
+                        <div>Once we got there, Captain Mom (not her real name) left with some of the crew to get the repairs and supplies needed, but I never saw her again. Later in that week, some guards approached the ship. I didn’t tell them my real name, because my mom always told me to keep it a secret, and unless I'm getting married, no one really needs to know it. They never asked about my relationship with the captain, but the navigator said that they found me, I just agreed. I was later told that the captain of the ship was a pirate. I knew, but I acted surprised anyways.</div>
                        
-                        <p>I couldn’t get much information about what happened to my mom, the captain. When I was asked, I told them that I was well treated, which made them think that I was being groomed.
+                        <div>I couldn’t get much information about what happened to my mom, the captain. When I was asked, I told them that I was well treated, which made them think that I was being groomed.
                         I asked what happened to the captain, but they never answered me.
-                        I did manage to hear them while they were talking with each other that the captain was turned into an Aboleth as a curse for her crimes or something.</p>
+                        I did manage to hear them while they were talking with each other that the captain was turned into an Aboleth as a curse for her crimes or something.</div>
                        
-                        <p>Because I was not considered an adult and they thought I was being groomed, I was taken to a monastery.
+                        <div>Because I was not considered an adult and they thought I was being groomed, I was taken to a monastery.
                         <em class="scratch">I didn’t like it much.</em>
-                        They focus more on the inner self, but I couldn't care about it because that is not where I was going to find my mom. So, I sneaked out very often. I was used to sneaking around because my mom never wanted me to fight.</p>
-                        <p>I remember hearing that libraries have all sorts of information, which led me to sneaking into some of the libraries in town. My goal was to find out what happened to my mother, but at the time, I was failing more times that I was able to get into the libraries. Which meant that it would take a while.</p>
+                        They focus more on the inner self, but I couldn't care about it because that is not where I was going to find my mom. So, I sneaked out very often. I was used to sneaking around because my mom never wanted me to fight.</div>
+                        <div>I remember hearing that libraries have all sorts of information, which led me to sneaking into some of the libraries in town. My goal was to find out what happened to my mother, but at the time, I was failing more times that I was able to get into the libraries. Which meant that it would take a while.</div>
                     </div>
                     <div class="chapter">
-                        <p class="chapter-title"> Locks and Books </p>
+                        <div class="chapter-title"> Locks and Books </div>
                        
-                        <p>With time <span class="clue" data-clue-type="age" data-clue="14 years old.">♦</span>, I made some friends who were also good at sneaking around, and one more than “friends”<span class="clue hidden" data-clue-type="romance" data-clue="You and Aye.">♥</span>, but that is a story for another day.</p>
+                        <div>With time <div class="clue" data-clue-type="age" data-clue="14 years old.">♦</div>, I made some friends who were also good at sneaking around, and one more than “friends”<div class="clue hidden" data-clue-type="romance" data-clue="You and Aye.">♥</div>, but that is a story for another day.</div>
                        
-                        <p>With the help of my friends I learn some useful skills and how to avoid trouble. <span class="clue" data-clue-type="class" data-clue="[+Rogue Lv. 1]">♦</span></p>
+                        <div>With the help of my friends I learn some useful skills and how to avoid trouble. <div class="clue" data-clue-type="class" data-clue="[+Rogue Lv. 1]">♦</div></div>
                        
-                        <p>One taught me to pick locks, and why locks are what I should be looking for. Spoiler, because of locks I know where the more interesting books are hidden. Another taught me that if I don't need something, I should leave it behind. Most things are not worth the weight nor the hassle.
-                        But the advice that led to the fondest memories came from the weirdest person I ever met. Because before him, I didn't know some people could change to any race of their choosing. He did try to keep it a secret, but I'm very observant. </p>
+                        <div>One taught me to pick locks, and why locks are what I should be looking for. Spoiler, because of locks I know where the more interesting books are hidden. Another taught me that if I don't need something, I should leave it behind. Most things are not worth the weight nor the hassle.
+                        But the advice that led to the fondest memories came from the weirdest person I ever met. Because before him, I didn't know some people could change to any race of their choosing. He did try to keep it a secret, but I'm very observant. </div>
                        
-                        <p>The suggestion he gave me was to keep the lights out to not be found. While I was not able to read in the dark, He was, so, we stayed in the library while he read for me. Do you remember that mind link thing, it is not just with my mom, but she told me to keep it just between us. I broke that promise. I don't even remember the moment I linked my mind with his, it felt so natural, like if we have been doing it for a while. After that, reading at night was so easy, no light, no sound, just two weirdos reading books.</p>
+                        <div>The suggestion he gave me was to keep the lights out to not be found. While I was not able to read in the dark, He was, so, we stayed in the library while he read for me. Do you remember that mind link thing, it is not just with my mom, but she told me to keep it just between us. I broke that promise. I don't even remember the moment I linked my mind with his, it felt so natural, like if we have been doing it for a while. After that, reading at night was so easy, no light, no sound, just two weirdos reading books.</div>
                        
-                        <p>And yes, as time passed <span class="clue" data-clue-type="age" data-clue="16 years old.">♦</span>, we did officially become more than friends <span class="clue" data-clue-type="romance" data-clue="Aye got married.">♥</span>, but I keep that for myself because my mom was not there. I want my mother there with me when I get to go through that in a more public way. (A cleric friend helped us, but we hid it from everyone else.)</p>
+                        <div>And yes, as time passed <div class="clue" data-clue-type="age" data-clue="16 years old.">♦</div>, we did officially become more than friends <div class="clue" data-clue-type="romance" data-clue="Aye got married.">♥</div>, but I keep that for myself because my mom was not there. I want my mother there with me when I get to go through that in a more public way. (A cleric friend helped us, but we hid it from everyone else.)</div>
                        
-                        <p>Those were good times and as I mentioned, my fondest memories, spending all night with my "friend" opening the locks, getting into a book and then leaving the book just to get into another. I saw books of all sizes, genre, depth, etc. Such variety I couldn't get enough of, and while I was there, I tried all the books I could.</p>
-                        <p>Safe to say, we did find some interesting books when we took some time to actually read. One book in particular became my favorite. It was an old one behind one of those locks, that talked about distant things. It was hard to read at first, but it took my mind away for a while. One part of the book talked about wishing on a star. What a whimsical idea, wishing to the lights on the sky for knowledge or a miracle.
-                        I found the book so endearing that one special day my "not-just-a-friend" got it for me, so I could read it on my own.</p>
+                        <div>Those were good times and as I mentioned, my fondest memories, spending all night with my "friend" opening the locks, getting into a book and then leaving the book just to get into another. I saw books of all sizes, genre, depth, etc. Such variety I couldn't get enough of, and while I was there, I tried all the books I could.</div>
+                        <div>Safe to say, we did find some interesting books when we took some time to actually read. One book in particular became my favorite. It was an old one behind one of those locks, that talked about distant things. It was hard to read at first, but it took my mind away for a while. One part of the book talked about wishing on a star. What a whimsical idea, wishing to the lights on the sky for knowledge or a miracle.
+                        I found the book so endearing that one special day my "not-just-a-friend" got it for me, so I could read it on my own.</div>
                     </div>
                     <div class="chapter">
-                        <p class="chapter-title"> Looking into the Stars </p>
+                        <div class="chapter-title"> Looking into the Stars </div>
                        
-                        <p>Not soon after, my "friend" disappeared, which stopped me from going to the library since turning the lights on at night was too risky. I only had one book to read, the one about distant things, and making a wish. Without anything to lose, one night I made a wish... Funny thing about stars… Did you know that they can talk back?</p>
+                        <div>Not soon after, my "friend" disappeared, which stopped me from going to the library since turning the lights on at night was too risky. I only had one book to read, the one about distant things, and making a wish. Without anything to lose, one night I made a wish... Funny thing about stars… Did you know that they can talk back?</div>
                        
-                        <p>I don’t know about other stars, but this one answered me. The star answered in the same language I made the wish, a secret language I had with my mom. (she called it deep speech)</p>
+                        <div>I don’t know about other stars, but this one answered me. The star answered in the same language I made the wish, a secret language I had with my mom. (she called it deep speech)</div>
                        
-                        <p>The… let’s call her Star, because I can’t translate her name, taught me a couple of interesting things <span class="clue" data-clue-type="class" data-clue="[+Warlock Lv. 1]">♦</span>.
-                        I wanted to repay for what she taught me and asked what I could do for her. She asked what is that which I want the most right now. My answer was knowledge and information, I want to know things. Mostly to find my mom, but it was also because I have acquired a taste and hunger for knowledge. So, I didn't mention my mom which made me feel a little selfish, but my mom always told me that if I don't think about myself and do things for me at least from time to time, I will hate life and fail to be her daughter.</p>
+                        <div>The… let’s call her Star, because I can’t translate her name, taught me a couple of interesting things <div class="clue" data-clue-type="class" data-clue="[+Warlock Lv. 1]">♦</div>.
+                        I wanted to repay for what she taught me and asked what I could do for her. She asked what is that which I want the most right now. My answer was knowledge and information, I want to know things. Mostly to find my mom, but it was also because I have acquired a taste and hunger for knowledge. So, I didn't mention my mom which made me feel a little selfish, but my mom always told me that if I don't think about myself and do things for me at least from time to time, I will hate life and fail to be her daughter.</div>
                        
-                        <p>And thus, my Star asked me to tell her everything I know and learned, and in exchange I would be taught and given power and magic.
-                        My answer was too unfiltered by my own taste: “You didn't have to offer power and magic, you got me at <em>‘tell me everything.’</em>” But my Star replied. “Some laws are immutable I request what people desire the most and I have to give something in exchange, otherwise my little Aye, there are spells that would collect that information you are sharing if I don't give you something in return.” And so, I told her so many things that I have heard, read, and what I learned from my nights with my “friend”. Safe to say, my star loved it, I even got some laughs from the jokes and the silly assumptions we make on this world. Sometimes my star even told me of what she sees because somehow I was giving too much information and I was not getting enough experience to learn more spells.</p>
+                        <div>And thus, my Star asked me to tell her everything I know and learned, and in exchange I would be taught and given power and magic.
+                        My answer was too unfiltered by my own taste: “You didn't have to offer power and magic, you got me at <em>‘tell me everything.’</em>” But my Star replied. “Some laws are immutable I request what people desire the most and I have to give something in exchange, otherwise my little Aye, there are spells that would collect that information you are sharing if I don't give you something in return.” And so, I told her so many things that I have heard, read, and what I learned from my nights with my “friend”. Safe to say, my star loved it, I even got some laughs from the jokes and the silly assumptions we make on this world. Sometimes my star even told me of what she sees because somehow I was giving too much information and I was not getting enough experience to learn more spells.</div>
                        
-                        <p>After a while my Star gave me the ability to see in the dark, I call it Star's Sight, which is what allows me to continue my night research. I have to admit, the library was not what it used to be. It is not the same without my partner. I miss his smiles, I miss his voice in my mind reading me all night, I miss his arms around me, and I miss his breath in my cheek and neck, because I knew I was not alone. But I need to keep reading, to find at least some clue, and then when I'm on my quest to find my mother, I can also look for him.</p>
+                        <div>After a while my Star gave me the ability to see in the dark, I call it Star's Sight, which is what allows me to continue my night research. I have to admit, the library was not what it used to be. It is not the same without my partner. I miss his smiles, I miss his voice in my mind reading me all night, I miss his arms around me, and I miss his breath in my cheek and neck, because I knew I was not alone. But I need to keep reading, to find at least some clue, and then when I'm on my quest to find my mother, I can also look for him.</div>
                        
-                        <p>One day I found a record of a pirate that turned into an Aboleth. Some believe she was a polymorphed or shape changed into an Aboleth, but the record mentions a spell caster that worried that the pirate might have an enchantment, was casting dispel, but it happened that accidentally dispel a True Polymorph spell on the pirate who in fact was an Aboleth. I guess that explains our secret language, and maybe it also explains why I can talk to people's minds.</p>
+                        <div>One day I found a record of a pirate that turned into an Aboleth. Some believe she was a polymorphed or shape changed into an Aboleth, but the record mentions a spell caster that worried that the pirate might have an enchantment, was casting dispel, but it happened that accidentally dispel a True Polymorph spell on the pirate who in fact was an Aboleth. I guess that explains our secret language, and maybe it also explains why I can talk to people's minds.</div>
                        
-                        <p>It has been 5 years since the storm that changed my life <span class="clue" data-clue-type="age" data-clue="17 years old.">♦</span>. I hope I can find where my mom is, but until then I will try to prepare myself and learn everything I can.</p>
+                        <div>It has been 5 years since the storm that changed my life <div class="clue" data-clue-type="age" data-clue="17 years old.">♦</div>. I hope I can find where my mom is, but until then I will try to prepare myself and learn everything I can.</div>
                     </div>
                 </div>
             </section>
-            <section id="section-D"><h2>Aye's Constelation</h2></section>
-            <section id="section-E"><h2>Extra</h2>
-                <p>Under Construction...</p>
-                <p>Possible paths that Aye could have taken</p>
-                <p>Possible paths that Aye could take</p>
-            </section>
         </div>
-        
     </main>
 
 
-    <!-- <footer> &copy; 2021 | by Stéfano De La Torre </footer> -->
+    
+    <footer> &copy; 2021 | by Stéfano De La Torre </footer>
     <div class="name-end">by St&eacute;f.</div>
-    <!-- <script src="main.js"></script> -->
+    <!-- <script src="stars.js"></script> -->
     <script>
-        window.addEventListener('load', (ev) => { console.log(`Welcome Adventurer!`); });
+        /* srlgRand() → Random number group generator */
+        function srlgRand(start = 0, range, list_size = 1, group_size = 1){
+            let list = [];
+            for(let i = 0; i < list_size; i++){
+                let n = [];
+                for(let j = 0; j < group_size; j++){
+                    n.push(Math.floor(Math.random() * range)+start);
+                }
+                list.push(n);
+            }
+            return list;
+        }
+
+        var starMap = [];
+        var nList = [];
+        var settings2 = {
+            "x":[30,70],
+            "y":[30,70],
+            "deg":[0,90],
+            "ang":1
+        };
+        var reset = true;
+        function updateDOM_arc2(_list){
+            let elems = document.querySelectorAll('.xi');
+            Object.keys(_list).forEach(i => {
+                let angle = _list[i][1];
+                let rad = angle*Math.PI/180;
+                let xr = 0;
+                let yr = 0;
+                if(angle == 90) { xr = 0; yr = 1; }
+                else if(angle == 180) { xr = -1; yr = 0; }
+                else {
+                    xr = Math.cos(rad);
+                    yr = Math.sin(rad);
+                }
+                let xz = _list[i][0] * xr;
+                let yz = _list[i][0] * yr;
+
+                /* reset angle */
+                if(_list[i][1] > 90){
+                    _list[i][1] -= 1;
+                } else if(_list[i][1] > 0) {
+                    _list[i][1] -= 120;
+                } else if(reset){
+                    console.log(`reset: ${reset}`);
+                    /* This line resets the stars for another spin. */
+                    _list[i][1] = Math.floor(Math.random() * 15) + 185;
+                }
+
+                if(yz > 10000) {
+                    _list[i][1] -= 5;
+                }
+                
+                /* to pixels */
+                let x = 100 + (xz/100);
+                let y = 100 - (yz/100);
+                elems[i].style = `transform: translateX(${x}vw) translateY(${y}vh);`;
+            });
+            return _list;
+        }
+        function makeStars_deg2(_list){
+            let starFielf = document.querySelector('.star-field');
+            _list.forEach(xt => {
+                let rad = xt[1]*Math.PI/180;
+                let xr = 0; let yr = 0;
+                if(xt[1] == 90) { xr = 0; yr = 1; }
+                else if(xt[1] == 180) { xr = -1; yr = 0; }
+                else {
+                    xr = Math.floor(Math.cos(rad)*10)/10;
+                    yr = Math.floor(Math.sin(rad)*10)/10;
+                }
+                let xz = xt[0] * xr;
+                let yz = xt[0] * yr;
+                /* to pixels */
+                let x = 100 + Math.floor(xz/100);
+                let y = 100 - Math.floor(yz/100);
+
+                let star = document.createElement('div');
+                star.classList.add('star', 'xi');
+                star.style = `transform: translateX(${x}vh) translateY(${y}vw);`;
+                starFielf.appendChild(star);
+            });
+        }
+
+        function yToAngle(_list){
+            _list.forEach(pair => {
+                pair[1] = Math.floor(Math.random() * 90) + 95;
+            });
+        }
+        window.addEventListener('load', (ev) => {
+            console.log(`Welcome Adventurer!`);
+            nList = srlgRand(1000,13142,50,2);
+            yToAngle(nList);
+            makeStars_deg2(nList);
+            constantUpdate2();
+        });
+        function constantUpdate2() {
+            let timeLimit = 1024;
+            let timeLeft = 200;
+            for(let i = 0; i<timeLimit; i++) {
+                let t = i*500;
+                setTimeout(() => {
+                    console.log(`time: ${i}`);
+                    updateDOM_arc2(nList);
+                    if(reset && timeLeft < 120){
+                        console.log(`timeLimit: ${timeLimit} at time: ${i}`);
+                        reset = false;
+                    } else if(reset) {
+                        timeLeft = timeLimit-i;
+                    }
+                }, t);
+            }
+        }
     </script>
 </body>
 </html>
