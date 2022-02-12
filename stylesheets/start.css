@@ -15,12 +15,12 @@
     --content-h: calc(100vh - var(--header-h));
 
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root{
         --main-bg: hsla(210, 0%, 5%, 100%);
         --main-clr: hsla(0, 0%, 89%, 100%);
     }
-}
+} */
 
 /* 
  start
